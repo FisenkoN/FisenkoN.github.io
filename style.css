@@ -1,0 +1,406 @@
+/**
+ * General comments
+ *
+ * @author      Accenture
+ *
+ * @date        11/17/2016
+ * @version     1.0
+ *
+ * @copyright   Copyright 2016 by Carmichael-Lynch. 110 North 5th St., Minneapolis, MN 55403 USA. All rights reserved.
+ * This software is the confidential and proprietary information of Carmichael-Lynch. ("Confidential Information").
+ */
+
+@keyframes falling {
+    0% {
+         transform: translate(0, -100px) rotate(0) scale(0.9);
+    }
+    100% {
+        transform: translate(30px, 1080px) rotate(359deg) scale(1.1);
+    }
+}
+
+@keyframes heartbeat {
+    0%,
+    100%,
+    40%,
+    80% {
+        transform: scale(.95);
+    }
+    20%,
+    60% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes snowdots1 {
+    0% {
+       transform: translateX(-20vw);
+    }
+    100% {
+        transform: translateX(10vw);
+    }
+}
+
+@keyframes snowdots2 {
+    0% {
+        transform: translateX(-20vw);
+    }
+    100% {
+        transform: translateX(7vw);
+    }
+}
+
+@keyframes snowdots3 {
+    0% {
+        transform: translateX(-20vw);
+    }
+    100% {
+        transform: translateX(5vw);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateX(-40vw) translateY(-1510px);
+    }
+    12.50% {
+        transform: translateX(-40vw) translateY(-1252px);
+    }
+    25% {
+        transform: translateX(-40vw) translateY(-994px);
+    }
+    37.50% {
+        transform: translateX(-40vw) translateY(-736px);
+    }
+    50% {
+        transform: translateX(-40vw) translateY(-478px);
+    }
+    62.50% {
+        transform: translateX(-40vw) translateY(-220px);
+    }
+    75% {
+        transform: translateX(-40vw) translateY(38px);
+    }
+    87.50% {
+        transform: translateX(-40vw) translateY(296px);
+    }
+    100% {
+        transform: translateX(-40vw) translateY(550px);
+    }
+}
+
+
+#global_content,
+#global_footer,
+.stl-videos-wrapper,
+#stl-splashAuthor {
+    display: none;
+}
+
+.stl-splashCopy,
+.stl-splashBackground,
+.splash.splash-page {
+    display: block;
+}
+
+#stl-splashWrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.stl-splashTitleWrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.splash.splash-page {
+    background-color: #FFF;
+    position: fixed;
+    z-index: 7;
+    max-height: 1200px;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#share-the-love-page {
+    height: 100%;
+}
+
+.stl-splashTitle {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.snowflakes {
+    position: absolute;
+    width: 100vw;
+    z-index: 5;
+    min-height: 768px;
+    height: 120vh;
+    max-height: 1200px;
+    min-width: 960px;
+    overflow: hidden;
+    top: 0;
+}
+
+.stl-splashDesc {
+    font-size: 1.6em;
+    color: #FFF;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0;
+    word-spacing: 1px;
+    line-height: 1.444em;
+    position: absolute;
+    top: 105px;
+    left: 166px;
+    z-index: 4;
+}
+
+.stl-splashCopy {
+    position: absolute;
+}
+
+#hand {
+    z-index: 2;
+    top: -485px;
+    position: absolute;
+    right: -300px;
+}
+
+#copy {
+    position: relative;
+    z-index: 4;
+    top: 58%;
+    width: 430px;
+    max-width: 960px;
+    margin: 0 auto;
+    transform: translateY(-58%);
+}
+
+#copy h2 {
+    color: #FFF;
+    font-size: 0.7em;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 95px;
+    right: 130px;
+    z-index: 4;
+}
+
+.stl-snowWrapper,
+.stl-splash {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.stl-snowWrapper {
+    z-index: 2;
+}
+
+.burst {
+    display: block;
+    z-index: 0;
+    position: absolute;
+    right: -1500px;
+    top: -1630px;
+    background: #0085AC;
+    opacity: 1;
+}
+
+  .snow.second, .snow.first {
+    opacity: 0;
+    height: 1060px;
+    left: 0px;
+    position: absolute;
+    width: 140vw;
+    z-index: 1;
+    margin: 0 auto;
+    transform: translate(-40%, -721px);
+    overflow: hidden;
+}
+
+
+#heart {
+    position: relative;
+    display: block;
+    margin: 0 auto 0;
+    z-index: 3;
+}
+
+.stl-splashDesc,
+.stl-splashTitle {
+    opacity: 0;
+}
+
+.snowflake {
+    position: absolute;
+    top: -100px;
+    z-index: 6;
+}
+
+.stl-snow1,
+.stl-snow2,
+.stl-snow3 {
+    position: absolute;
+  top:0;
+}
+
+/* Transitions and animations*/
+
+.snowflake {
+    animation: falling 13.5s linear 2000ms infinite;
+}
+.snowflake:nth-of-type(17) {
+    left: 50%;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    animation-delay: 0.5s;
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    animation-delay: 5.5s;
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    animation-delay: 3.5s;
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    animation-delay: 1.5s;
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    animation-delay: 7.5s;
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    animation-delay: 5.5s;
+}
+
+.snowflake:nth-of-type(7) {
+    left: 66%;
+    animation-delay: 1.5s;
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    animation-delay: 0.5s;
+}
+
+.snowflake:nth-of-type(9) {
+    left: 85%;
+    animation-delay: 2.5s;
+}
+
+.snowflake:nth-of-type(10) {
+    left: 95%;
+    animation-delay: 7.5s;
+}
+
+.snowflake:nth-of-type(11) {
+    left: 70%;
+    animation-delay: 8.5s;
+}
+
+.snowflake:nth-of-type(12) {
+    left: 46%;
+    animation-delay: 10.5s;
+}
+
+.snowflake:nth-of-type(13) {
+    left: 25%;
+    animation-delay: 11.5s;
+}
+
+.snowflake:nth-of-type(14) {
+    left: 10%;
+    animation-delay: 13.5s;
+}
+
+.snowflake:nth-of-type(15) {
+    left: 25%;
+    animation-delay: 9.5s;
+}
+
+.snowflake:nth-of-type(16) {
+    left: 78%;
+    animation-delay: 12.5s;
+}
+
+#heart {
+    animation: heartbeat 1.5s linear infinite none;
+}
+
+.stl-splashDesc,
+.stl-splashTitle {
+    animation: fadeIn 1s ease-in 2000ms 1 forwards;
+}
+
+.burst {
+    animation: spin 150s linear infinite;
+}
+
+.snow.first {
+    animation: fadeIn 1s ease-in 4000ms 1 forwards, fall 40s linear -16s infinite;
+}
+
+.snow.second {
+    animation: fadeIn 1s ease-in 4000ms 1 forwards, fall 40s linear 3s infinite;
+}
+
+/*Mediaqueries*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .stl-splashCopy,
+    .stl-splashBackground,
+    .splash.splash-page {
+        display: none;
+    }
+    #global_content,
+    #global_footer,
+    .stl-videos-wrapper {
+        display: block;
+    }
+}
